@@ -83,6 +83,29 @@ body {
   text-decoration: none;
 }
 
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+  transition: var(--transition);
+  filter: drop-shadow(0 0 8px rgba(0, 102, 255, 0.25));
+}
+
+.nav-logo:hover .nav-logo-img {
+  filter: drop-shadow(0 0 16px rgba(0, 212, 255, 0.4));
+  transform: translateY(-1px);
+}
+
+.footer-logo {
+  height: 50px;
+  width: auto;
+  display: block;
+  opacity: 0.85;
+  transition: var(--transition);
+}
+
+.footer-logo:hover { opacity: 1; }
+
 .logo-icon {
   width: 42px;
   height: 42px;

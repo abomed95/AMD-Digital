@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 70" fill="none">
+  <defs>
+    <!-- Icon background gradient -->
+    <linearGradient id="bgG" x1="0" y1="0" x2="70" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0055ee"/>
+      <stop offset="55%" stop-color="#3311bb"/>
+      <stop offset="100%" stop-color="#6b21a8"/>
+    </linearGradient>
+
+    <!-- Line gradient -->
+    <linearGradient id="lG" x1="10" y1="60" x2="55" y2="10" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.75)"/>
+      <stop offset="100%" stop-color="white"/>
+    </linearGradient>
+
+    <!-- Text gradient AMD -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#c4d4ff"/>
+    </linearGradient>
+
+    <!-- Apex glow -->
+    <filter id="ag" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Node glow -->
+    <filter id="ng" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Text shadow -->
+    <filter id="ts" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0055ff" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Top shine -->
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.14)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+
+    <clipPath id="rc">
+      <rect width="70" height="70" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <!-- ══════════════════════════════════ -->
+  <!--           ICON MARK              -->
+  <!-- ══════════════════════════════════ -->
+
+  <!-- Background square -->
+  <rect width="70" height="70" rx="16" fill="url(#bgG)"/>
+  <rect width="70" height="70" rx="16" fill="url(#shine)"/>
+  <rect x="1" y="1" width="68" height="68" rx="15.5"
+        stroke="rgba(255,255,255,0.13)" stroke-width="1.5" fill="none"/>
+
+  <!-- Corner decorations -->
+  <circle cx="9" cy="9" r="1.4" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="61" cy="9" r="1.4" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="9" cy="61" r="1.4" fill="rgba(255,255,255,0.18)"/>
+  <circle cx="61" cy="61" r="1.4" fill="rgba(255,255,255,0.18)"/>
+
+  <!-- "A" mark - left leg -->
+  <line x1="35" y1="12" x2="12" y2="58"
+        stroke="url(#lG)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- "A" mark - right leg -->
+  <line x1="35" y1="12" x2="58" y2="58"
+        stroke="url(#lG)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Crossbar (cyan) -->
+  <line x1="22" y1="40" x2="48" y2="40"
+        stroke="#00d4ff" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Base dash line -->
+  <line x1="12" y1="58" x2="58" y2="58"
+        stroke="rgba(255,255,255,0.15)" stroke-width="1.5"
+        stroke-dasharray="2 5" stroke-linecap="round"/>
+
+  <!-- Apex node (glowing, animated) -->
+  <circle cx="35" cy="12" r="5.5" fill="#00c8ff" filter="url(#ag)"/>
+  <circle cx="35" cy="12" r="3" fill="white"/>
+
+  <!-- Apex pulse rings -->
+  <circle cx="35" cy="12" r="5.5" fill="none" stroke="#00d4ff" stroke-width="1.2">
+    <animate attributeName="r" from="5.5" to="15" dur="2.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="0.7" to="0" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="35" cy="12" r="5.5" fill="none" stroke="#00d4ff" stroke-width="0.8">
+    <animate attributeName="r" from="5.5" to="15" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="0.5" to="0" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Crossbar left node -->
+  <circle cx="22" cy="40" r="3.5" fill="#00d4ff" filter="url(#ng)"/>
+  <circle cx="22" cy="40" r="1.8" fill="white"/>
+
+  <!-- Crossbar right node -->
+  <circle cx="48" cy="40" r="3.5" fill="#00d4ff" filter="url(#ng)"/>
+  <circle cx="48" cy="40" r="1.8" fill="white"/>
+
+  <!-- Bottom-left node -->
+  <circle cx="12" cy="58" r="4" fill="rgba(255,255,255,0.88)" filter="url(#ng)"/>
+  <!-- Bottom-right node -->
+  <circle cx="58" cy="58" r="4" fill="rgba(255,255,255,0.88)" filter="url(#ng)"/>
+
+  <!-- ══════════════════════════════════ -->
+  <!--           WORDMARK               -->
+  <!-- ══════════════════════════════════ -->
+
+  <!-- Separator line -->
+  <line x1="88" y1="16" x2="88" y2="54"
+        stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <!-- "AMD" text -->
+  <text x="102" y="40"
+        font-family="'Space Grotesk', 'Arial Black', Arial, sans-serif"
+        font-weight="800"
+        font-size="30"
+        letter-spacing="1.5"
+        fill="url(#textGrad)"
+        filter="url(#ts)">AMD</text>
+
+  <!-- "DIGITAL" text -->
+  <text x="103" y="57"
+        font-family="'Inter', Arial, sans-serif"
+        font-weight="400"
+        font-size="12"
+        letter-spacing="6"
+        fill="#7a8fb5">DIGITAL</text>
+
+  <!-- Accent dot after AMD -->
+  <circle cx="201" cy="27" r="3" fill="#00d4ff" filter="url(#ng)"/>
+</svg>

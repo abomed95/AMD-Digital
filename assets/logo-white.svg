@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 70" fill="none">
+  <!-- Monochrome white version — for dark backgrounds without icon bg -->
+  <defs>
+    <filter id="wg" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- "A" mark lines -->
+  <line x1="28" y1="10" x2="8" y2="55" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <line x1="28" y1="10" x2="48" y2="55" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+  <line x1="16.5" y1="37" x2="39.5" y2="37" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <line x1="8" y1="55" x2="48" y2="55" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="2 5" stroke-linecap="round"/>
+
+  <!-- Nodes white version -->
+  <circle cx="28" cy="10" r="4.5" fill="white" filter="url(#wg)" opacity="0.95"/>
+  <circle cx="16.5" cy="37" r="3" fill="white" opacity="0.8"/>
+  <circle cx="39.5" cy="37" r="3" fill="white" opacity="0.8"/>
+  <circle cx="8" cy="55" r="3" fill="white" opacity="0.6"/>
+  <circle cx="48" cy="55" r="3" fill="white" opacity="0.6"/>
+
+  <!-- Separator -->
+  <line x1="66" y1="16" x2="66" y2="54" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+  <!-- Wordmark -->
+  <text x="80" y="40"
+        font-family="'Space Grotesk', 'Arial Black', Arial, sans-serif"
+        font-weight="800"
+        font-size="28"
+        letter-spacing="1.5"
+        fill="white">AMD</text>
+
+  <text x="81" y="57"
+        font-family="'Inter', Arial, sans-serif"
+        font-weight="400"
+        font-size="11"
+        letter-spacing="6"
+        fill="rgba(255,255,255,0.55)">DIGITAL</text>
+</svg>

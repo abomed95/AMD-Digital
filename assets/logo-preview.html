@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AMD Digital — Brand Assets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue: #0066ff;
+      --cyan: #00d4ff;
+      --purple: #7c3aed;
+      --dark: #050a15;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0a0f1e;
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 3rem 2rem;
+    }
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 0.25rem;
+      background: linear-gradient(135deg, #fff, #00d4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle { color: #8892a4; font-size: 0.9rem; margin-bottom: 3rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
+    .card {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .card-preview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem;
+      min-height: 160px;
+    }
+    .dark-bg { background: #050a15; }
+    .gradient-bg { background: linear-gradient(135deg, #050a15, #0f1a3d); }
+    .light-bg { background: #f0f4ff; }
+    .card-info {
+      padding: 1rem 1.25rem;
+      background: rgba(255,255,255,0.03);
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .card-info h3 { font-size: 0.85rem; font-weight: 600; margin-bottom: 0.2rem; }
+    .card-info p { font-size: 0.75rem; color: #8892a4; }
+    .colors { display: flex; gap: 0.75rem; margin-top: 2rem; max-width: 1000px; margin-left: auto; margin-right: auto; flex-wrap: wrap; }
+    .color-swatch {
+      flex: 1; min-width: 120px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .swatch-color { height: 80px; }
+    .swatch-info { padding: 0.75rem; background: rgba(255,255,255,0.03); }
+    .swatch-info .name { font-weight: 600; font-size: 0.85rem; }
+    .swatch-info .hex { font-size: 0.75rem; color: #8892a4; font-family: monospace; }
+    .section-label {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #00d4ff;
+      margin: 2.5rem 0 1rem;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .section-label + .section-label { margin-top: 1rem; }
+    header { max-width: 1000px; margin: 0 auto 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AMD Digital — Brand Assets</h1>
+    <p class="subtitle">Guide des logos et ressources visuelles officielles</p>
+  </header>
+
+  <p class="section-label">Logos — Fond sombre</p>
+  <div class="grid">
+    <div class="card">
+      <div class="card-preview dark-bg">
+        <img src="logo.svg" alt="Logo complet" style="height:60px; width:auto;"/>
+      </div>
+      <div class="card-info">
+        <h3>Logo complet horizontal</h3>
+        <p>logo.svg — Utilisation principale sur fond sombre</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-preview gradient-bg">
+        <img src="logo-white.svg" alt="Logo blanc" style="height:50px; width:auto;"/>
+      </div>
+      <div class="card-info">
+        <h3>Logo monochrome blanc</h3>
+        <p>logo-white.svg — Footer, fonds gradient</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-preview dark-bg">
+        <img src="logo-icon.svg" alt="Icône" style="height:80px; width:80px;"/>
+      </div>
+      <div class="card-info">
+        <h3>Icône / Favicon</h3>
+        <p>logo-icon.svg — App icon, favicon, avatar</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="section-label">Couleurs de la charte</p>
+  <div class="colors">
+    <div class="color-swatch">
+      <div class="swatch-color" style="background:#0066ff;"></div>
+      <div class="swatch-info">
+        <div class="name">Bleu Principal</div>
+        <div class="hex">#0066FF</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="swatch-color" style="background:#00d4ff;"></div>
+      <div class="swatch-info">
+        <div class="name">Cyan Accent</div>
+        <div class="hex">#00D4FF</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="swatch-color" style="background:#7c3aed;"></div>
+      <div class="swatch-info">
+        <div class="name">Violet Tech</div>
+        <div class="hex">#7C3AED</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="swatch-color" style="background:#050a15;"></div>
+      <div class="swatch-info">
+        <div class="name">Fond Principal</div>
+        <div class="hex">#050A15</div>
+      </div>
+    </div>
+    <div class="color-swatch">
+      <div class="swatch-color" style="background:linear-gradient(135deg,#0055ee,#6b21a8);"></div>
+      <div class="swatch-info">
+        <div class="name">Gradient Logo</div>
+        <div class="hex">#0055EE → #6B21A8</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
