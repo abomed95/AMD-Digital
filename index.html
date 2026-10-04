@@ -1,639 +1,103 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AMD Digital — Développement d'applications mobiles & web, installation réseau, intégration de l'IA dans les administrations publiques et privées. Créateurs de Xeer-AI, D-Billet, Geeska-Customs-IA, SmartEtud." />
-  <meta property="og:title" content="AMD Digital — Innovation Technologique & IA" />
-  <meta property="og:description" content="Solutions digitales innovantes pour les administrations et entreprises." />
-  <title>AMD Digital — Innovation Technologique & IA</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Favicon inline SVG -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230066ff'/><text y='.9em' font-size='65' font-weight='900' fill='white' font-family='Arial' x='12'>A</text></svg>" />
-</head>
-<body>
-
-  <!-- Particles Background -->
-  <canvas id="particles-canvas"></canvas>
-
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <a href="#" class="nav-logo">
-      <div class="logo-icon">AMD</div>
-      <span class="logo-text">AMD Digital</span>
-    </a>
-
-    <ul class="nav-links">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#products">Produits</a></li>
-      <li><a href="#process">Processus</a></li>
-      <li><a href="#contact" class="nav-cta">Nous contacter</a></li>
-    </ul>
-
-    <button class="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <div class="hero-bg-gradient"></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="dot"></span>
-        Innovation Digitale & Intelligence Artificielle
-      </div>
-
-      <h1>
-        Nous façonnons<br />
-        l'avenir de <span class="gradient-text" id="typing-text">Mobile & Web</span>
-      </h1>
-
-      <p class="hero-description">
-        AMD Digital conçoit des solutions technologiques de pointe — applications mobiles et web,
-        intégration de l'IA, réseaux intelligents — pour transformer les administrations
-        publiques et les entreprises privées.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#products" class="btn-primary">Découvrir nos produits</a>
-        <a href="#contact" class="btn-outline">Démarrer un projet</a>
-      </div>
-
-      <div class="hero-stats">
-        <div class="stat-item">
-          <div class="stat-number" data-target="4" data-suffix="+">0+</div>
-          <div class="stat-label">Produits actifs</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number" data-target="100" data-suffix="%">0%</div>
-          <div class="stat-label">Solutions sur mesure</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number" data-target="3" data-suffix=" domaines">0</div>
-          <div class="stat-label">Expertises clés</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-visual reveal-left">
-          <div class="about-card-main">
-            <div class="about-logo-large">A</div>
-            <h3>AMD Digital</h3>
-            <p>
-              Entreprise technologique spécialisée dans le développement de solutions digitales
-              intelligentes. Nous combinons expertise technique et vision stratégique pour
-              créer des outils qui transforment réellement le travail quotidien des organisations.
-            </p>
-            <div class="tech-pills">
-              <span class="pill">React Native</span>
-              <span class="pill">Flutter</span>
-              <span class="pill">Node.js</span>
-              <span class="pill">Python</span>
-              <span class="pill">IA / ML</span>
-              <span class="pill">API REST</span>
-              <span class="pill">Cisco</span>
-              <span class="pill">Cloud</span>
-            </div>
-          </div>
-
-          <div class="floating-badges">
-            <div class="badge-float">🤖 IA & Machine Learning</div>
-            <div class="badge-float">📱 Apps Mobiles & Web</div>
-            <div class="badge-float">🔗 Réseaux & Infra</div>
-          </div>
-        </div>
-
-        <div class="about-features reveal-right">
-          <div class="section-tag">Qui sommes-nous</div>
-          <h2 class="section-title">Technologie au service<br />de <span style="color: var(--secondary)">l'innovation</span></h2>
-          <p class="section-subtitle" style="margin-bottom: 2rem;">
-            AMD Digital accompagne les organisations dans leur transformation digitale en développant
-            des outils modernes, évolutifs et intégrés à l'intelligence artificielle.
-          </p>
-
-          <div class="about-feature">
-            <div class="feature-icon blue">🚀</div>
-            <div class="feature-text">
-              <h4>Développement sur mesure</h4>
-              <p>Applications web et mobiles adaptées à vos processus métiers spécifiques.</p>
-            </div>
-          </div>
-
-          <div class="about-feature">
-            <div class="feature-icon cyan">🧠</div>
-            <div class="feature-text">
-              <h4>Intelligence Artificielle intégrée</h4>
-              <p>Modèles IA conçus et déployés pour automatiser et optimiser vos opérations.</p>
-            </div>
-          </div>
-
-          <div class="about-feature">
-            <div class="feature-icon purple">🌐</div>
-            <div class="feature-text">
-              <h4>Infrastructure réseau</h4>
-              <p>Conception, installation et sécurisation de réseaux pour toutes structures.</p>
-            </div>
-          </div>
-
-          <div class="about-feature">
-            <div class="feature-icon green">🏛️</div>
-            <div class="feature-text">
-              <h4>Secteur public & privé</h4>
-              <p>Expertise éprouvée dans la digitalisation des administrations et entreprises.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SERVICES ===== -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="text-center" style="margin-bottom: 1rem;">
-        <div class="section-tag reveal">Nos services</div>
-        <h2 class="section-title reveal">Ce que nous <span style="color: var(--secondary)">construisons</span></h2>
-        <p class="section-subtitle reveal">
-          Des solutions complètes, de la conception à la mise en production, pour accompagner
-          chaque étape de votre transformation digitale.
-        </p>
-      </div>
-
-      <div class="services-grid">
-
-        <div class="service-card">
-          <div class="service-icon-wrap" style="background: rgba(0,102,255,0.15);">📱</div>
-          <h3>Applications Mobiles</h3>
-          <p>Développement d'applications iOS et Android performantes avec une expérience utilisateur fluide et intuitive, adaptées à votre audience.</p>
-          <div class="service-tags">
-            <span class="service-tag">React Native</span>
-            <span class="service-tag">Flutter</span>
-            <span class="service-tag">iOS</span>
-            <span class="service-tag">Android</span>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon-wrap" style="background: rgba(0,212,255,0.15);">🌐</div>
-          <h3>Applications Web</h3>
-          <p>Plateformes web modernes, rapides et évolutives — dashboards, portails administratifs, e-commerce, SaaS — conçues pour durer.</p>
-          <div class="service-tags">
-            <span class="service-tag">React</span>
-            <span class="service-tag">Next.js</span>
-            <span class="service-tag">Node.js</span>
-            <span class="service-tag">PostgreSQL</span>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon-wrap" style="background: rgba(124,58,237,0.15);">🤖</div>
-          <h3>API & Modèles IA</h3>
-          <p>Développement d'APIs intelligentes et intégration de modèles de machine learning dans vos systèmes existants pour les rendre plus efficaces.</p>
-          <div class="service-tags">
-            <span class="service-tag">Python</span>
-            <span class="service-tag">TensorFlow</span>
-            <span class="service-tag">OpenAI</span>
-            <span class="service-tag">FastAPI</span>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon-wrap" style="background: rgba(16,185,129,0.15);">🔗</div>
-          <h3>Installation Réseau</h3>
-          <p>Conception et déploiement d'infrastructures réseau sécurisées, câblées et Wi-Fi, pour entreprises et administrations de toutes tailles.</p>
-          <div class="service-tags">
-            <span class="service-tag">Cisco</span>
-            <span class="service-tag">Wi-Fi 6</span>
-            <span class="service-tag">VPN</span>
-            <span class="service-tag">Firewall</span>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon-wrap" style="background: rgba(245,158,11,0.15);">🏛️</div>
-          <h3>Digitalisation des Administrations</h3>
-          <p>Accompagnement complet à la transformation numérique des institutions publiques : dématérialisation, guichets en ligne, workflow automatisés.</p>
-          <div class="service-tags">
-            <span class="service-tag">E-gouvernance</span>
-            <span class="service-tag">Workflow</span>
-            <span class="service-tag">GED</span>
-            <span class="service-tag">Portails</span>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon-wrap" style="background: rgba(239,68,68,0.15);">☁️</div>
-          <h3>Cloud & DevOps</h3>
-          <p>Déploiement, sécurisation et maintenance de vos applications sur les infrastructures cloud les plus fiables du marché.</p>
-          <div class="service-tags">
-            <span class="service-tag">AWS</span>
-            <span class="service-tag">Docker</span>
-            <span class="service-tag">CI/CD</span>
-            <span class="service-tag">Kubernetes</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PRODUCTS ===== -->
-  <section class="products" id="products">
-    <div class="products-intro text-center">
-      <div class="section-tag reveal">Nos produits</div>
-      <h2 class="section-title reveal">Nos solutions <span style="color: var(--secondary)">phares</span></h2>
-      <p class="section-subtitle reveal">
-        Des produits innovants développés par AMD Digital pour répondre aux défis concrets
-        des administrations et entreprises modernes.
-      </p>
-    </div>
-
-    <div class="products-grid">
-
-      <!-- Xeer-AI -->
-      <div class="product-card">
-        <div class="product-header">
-          <div class="product-icon" style="background: linear-gradient(135deg, rgba(0,102,255,0.2), rgba(0,212,255,0.1));">🧠</div>
-          <span class="product-status status-live">En ligne</span>
-          <h3>Xeer-AI</h3>
-          <div class="product-tagline">Assistant IA Intelligent</div>
-        </div>
-        <div class="product-body">
-          <p>
-            Plateforme d'intelligence artificielle conversationnelle conçue pour assister
-            les équipes professionnelles dans leurs tâches quotidiennes — analyse, rédaction,
-            prise de décision et automatisation.
-          </p>
-          <ul class="product-features">
-            <li>Traitement du langage naturel avancé</li>
-            <li>Intégration multi-systèmes via API</li>
-            <li>Support multilingue (FR, AR, EN)</li>
-            <li>Tableaux de bord analytiques</li>
-          </ul>
-        </div>
-        <div class="product-footer">
-          <div class="product-tech">
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge">LLM</span>
-            <span class="tech-badge">FastAPI</span>
-          </div>
-          <a href="#contact" class="product-link">En savoir plus →</a>
-        </div>
-      </div>
-
-      <!-- D-Billet -->
-      <div class="product-card">
-        <div class="product-header">
-          <div class="product-icon" style="background: linear-gradient(135deg, rgba(124,58,237,0.2), rgba(167,139,250,0.1));">🎫</div>
-          <span class="product-status status-live">En ligne</span>
-          <h3>D-Billet</h3>
-          <div class="product-tagline">Billetterie & Ticketing Digital</div>
-        </div>
-        <div class="product-body">
-          <p>
-            Solution complète de billetterie numérique pour événements, transports et
-            services publics. Gestion des accès, QR codes sécurisés et suivi en temps réel.
-          </p>
-          <ul class="product-features">
-            <li>Génération et validation de QR codes</li>
-            <li>Gestion des flux de spectateurs</li>
-            <li>Paiement mobile intégré</li>
-            <li>Rapports et statistiques en temps réel</li>
-          </ul>
-        </div>
-        <div class="product-footer">
-          <div class="product-tech">
-            <span class="tech-badge">React Native</span>
-            <span class="tech-badge">Node.js</span>
-            <span class="tech-badge">MongoDB</span>
-          </div>
-          <a href="#contact" class="product-link">En savoir plus →</a>
-        </div>
-      </div>
-
-      <!-- Geeska-Customs-IA -->
-      <div class="product-card">
-        <div class="product-header">
-          <div class="product-icon" style="background: linear-gradient(135deg, rgba(16,185,129,0.2), rgba(6,182,212,0.1));">🛃</div>
-          <span class="product-status status-beta">Beta</span>
-          <h3>Geeska-Customs-IA</h3>
-          <div class="product-tagline">IA pour les Douanes</div>
-        </div>
-        <div class="product-body">
-          <p>
-            Système intelligent de gestion douanière intégrant l'IA pour l'analyse
-            prédictive des risques, l'automatisation des déclarations et la détection
-            des anomalies en temps réel.
-          </p>
-          <ul class="product-features">
-            <li>Analyse prédictive des risques douaniers</li>
-            <li>Automatisation des déclarations</li>
-            <li>Détection des fraudes par IA</li>
-            <li>Intégration avec systèmes existants</li>
-          </ul>
-        </div>
-        <div class="product-footer">
-          <div class="product-tech">
-            <span class="tech-badge">ML</span>
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge">PostgreSQL</span>
-          </div>
-          <a href="#contact" class="product-link">En savoir plus →</a>
-        </div>
-      </div>
-
-      <!-- SmartEtud -->
-      <div class="product-card">
-        <div class="product-header">
-          <div class="product-icon" style="background: linear-gradient(135deg, rgba(245,158,11,0.2), rgba(251,191,36,0.1));">🎓</div>
-          <span class="product-status status-live">En ligne</span>
-          <h3>SmartEtud</h3>
-          <div class="product-tagline">Gestion Universitaire Intelligente</div>
-        </div>
-        <div class="product-body">
-          <p>
-            Plateforme complète de gestion des établissements d'enseignement supérieur :
-            inscriptions, notes, emplois du temps, communication et suivi des étudiants
-            boostés par l'IA.
-          </p>
-          <ul class="product-features">
-            <li>Gestion des inscriptions et dossiers</li>
-            <li>Emplois du temps automatisés par IA</li>
-            <li>Portail étudiant & enseignant</li>
-            <li>Analyses de performance académique</li>
-          </ul>
-        </div>
-        <div class="product-footer">
-          <div class="product-tech">
-            <span class="tech-badge">React</span>
-            <span class="tech-badge">Django</span>
-            <span class="tech-badge">AI</span>
-          </div>
-          <a href="#contact" class="product-link">En savoir plus →</a>
-        </div>
-      </div>
-
-      <!-- Produit 5 — futur -->
-      <div class="product-card" style="grid-column: span 1;">
-        <div class="product-header">
-          <div class="product-icon" style="background: linear-gradient(135deg, rgba(239,68,68,0.2), rgba(252,165,165,0.1));">🏥</div>
-          <span class="product-status status-dev">En développement</span>
-          <h3>MediSmart-IA</h3>
-          <div class="product-tagline">Santé & IA — Prochainement</div>
-        </div>
-        <div class="product-body">
-          <p>
-            Solution de gestion hospitalière intelligente intégrant l'IA pour l'aide
-            au diagnostic, la gestion des patients, le suivi des prescriptions et
-            l'optimisation des ressources médicales.
-          </p>
-          <ul class="product-features">
-            <li>Aide au diagnostic par IA</li>
-            <li>Gestion des dossiers médicaux</li>
-            <li>Planification intelligente des ressources</li>
-            <li>Télémedecine intégrée</li>
-          </ul>
-        </div>
-        <div class="product-footer">
-          <div class="product-tech">
-            <span class="tech-badge">HL7</span>
-            <span class="tech-badge">ML</span>
-            <span class="tech-badge">React</span>
-          </div>
-          <a href="#contact" class="product-link">Rejoindre la liste →</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== PROCESS ===== -->
-  <section class="process" id="process">
-    <div class="container">
-      <div class="text-center" style="margin-bottom: 1rem;">
-        <div class="section-tag reveal">Notre approche</div>
-        <h2 class="section-title reveal">Comment nous <span style="color: var(--secondary)">travaillons</span></h2>
-        <p class="section-subtitle reveal">
-          Un processus éprouvé, agile et transparent pour livrer des projets de qualité
-          dans les délais impartis.
-        </p>
-      </div>
-
-      <div class="process-steps">
-
-        <div class="step-card">
-          <div class="step-number"><span class="num">01</span></div>
-          <h3>Découverte</h3>
-          <p>Analyse approfondie de vos besoins, de votre environnement et de vos objectifs stratégiques.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-number"><span class="num">02</span></div>
-          <h3>Conception</h3>
-          <p>Architecture technique, prototypage UI/UX et validation de la solution avant développement.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-number"><span class="num">03</span></div>
-          <h3>Développement</h3>
-          <p>Sprints agiles avec livraisons régulières, revues de code rigoureuses et tests continus.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-number"><span class="num">04</span></div>
-          <h3>Déploiement</h3>
-          <p>Mise en production sécurisée, formation des équipes et suivi des performances post-lancement.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="text-center" style="margin-bottom: 1rem;">
-        <div class="section-tag reveal">Contact</div>
-        <h2 class="section-title reveal">Démarrons votre <span style="color: var(--secondary)">projet</span></h2>
-        <p class="section-subtitle reveal">
-          Vous avez un projet ou une idée ? Notre équipe est prête à vous accompagner.
-        </p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-info reveal-left">
-          <h3>Parlons de votre vision</h3>
-          <p>
-            Que vous souhaitiez digitaliser une administration, déployer une solution IA,
-            développer une application ou sécuriser votre réseau — AMD Digital a l'expertise
-            pour transformer votre idée en réalité.
-          </p>
-
-          <div class="contact-items">
-            <div class="contact-item">
-              <div class="contact-icon">📍</div>
-              <div class="contact-item-text">
-                <span>Localisation</span>
-                <strong>Djibouti, République de Djibouti</strong>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">✉️</div>
-              <div class="contact-item-text">
-                <span>Email</span>
-                <strong>contact@amd-digital.com</strong>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">📞</div>
-              <div class="contact-item-text">
-                <span>Téléphone</span>
-                <strong>+253 XX XX XX XX</strong>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">🕐</div>
-              <div class="contact-item-text">
-                <span>Disponibilité</span>
-                <strong>Sam–Jeu, 08h00 – 17h00</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form reveal-right">
-          <h3 class="form-title">Envoyer un message</h3>
-          <form>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="fname">Prénom</label>
-                <input type="text" id="fname" placeholder="Votre prénom" required />
-              </div>
-              <div class="form-group">
-                <label for="lname">Nom</label>
-                <input type="text" id="lname" placeholder="Votre nom" required />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="votre@email.com" required />
-            </div>
-
-            <div class="form-group">
-              <label for="subject">Sujet</label>
-              <select id="subject">
-                <option value="">Sélectionner un sujet</option>
-                <option>Développement d'application mobile</option>
-                <option>Développement d'application web</option>
-                <option>Intégration IA / API</option>
-                <option>Installation réseau</option>
-                <option>Digitalisation administration</option>
-                <option>Produit Xeer-AI</option>
-                <option>Produit D-Billet</option>
-                <option>Produit Geeska-Customs-IA</option>
-                <option>Produit SmartEtud</option>
-                <option>Autre</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" placeholder="Décrivez votre projet ou votre besoin..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn-submit">Envoyer le message →</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <div class="footer-main">
-      <div class="footer-brand">
-        <span class="logo-text">AMD Digital</span>
-        <p>
-          Entreprise technologique spécialisée dans le développement de solutions digitales,
-          l'intégration de l'intelligence artificielle et l'installation réseau pour les
-          administrations et entreprises.
-        </p>
-        <div class="social-links">
-          <a href="#" class="social-link" title="LinkedIn">in</a>
-          <a href="#" class="social-link" title="Twitter/X">𝕏</a>
-          <a href="#" class="social-link" title="Facebook">f</a>
-          <a href="#" class="social-link" title="GitHub">⌥</a>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#services">Applications Mobiles</a></li>
-          <li><a href="#services">Applications Web</a></li>
-          <li><a href="#services">API & Modèles IA</a></li>
-          <li><a href="#services">Installation Réseau</a></li>
-          <li><a href="#services">Digitalisation Admin.</a></li>
-          <li><a href="#services">Cloud & DevOps</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Produits</h4>
-        <ul>
-          <li><a href="#products">Xeer-AI</a></li>
-          <li><a href="#products">D-Billet</a></li>
-          <li><a href="#products">Geeska-Customs-IA</a></li>
-          <li><a href="#products">SmartEtud</a></li>
-          <li><a href="#products">MediSmart-IA</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Entreprise</h4>
-        <ul>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#process">Notre processus</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#">Carrières</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2025 AMD Digital. Tous droits réservés.</p>
-      <div class="footer-bottom-links">
-        <a href="#">Politique de confidentialité</a>
-        <a href="#">Mentions légales</a>
-        <a href="#">CGU</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Back to top -->
-  <button class="back-to-top" aria-label="Retour en haut">↑</button>
-
-  <!-- Scripts -->
-  <script src="js/main.js"></script>
-</body>
-</html>
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AMD Digital — Prévision et aide à la décision par l’IA · Djibouti</title>
+<meta name="description" content="AMD Digital, entreprise djiboutienne d’intelligence artificielle : prévision de la demande, des risques et des pics d’activité, et outils d’aide à la décision à partir de vos propres données.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b2a4a'/%3E%3Ctext x='32' y='40' font-family='Arial' font-weight='700' font-size='20' fill='%235fd0c6' text-anchor='middle'%3EAMD%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b2a4a;--teal:#178f8b;--aqua:#5fd0c6;--gold:#c2a15b;--ink:#1c2632;--mute:#5f6b78;--line:#e3e7ec;--soft:#f5f7f9}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--ink);line-height:1.6;background:#fff;font-size:16px}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;background:rgba(11,42,74,.97);z-index:10}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;font-size:18px}
+.brand span{color:var(--aqua)}
+.mono{border:1.5px solid var(--gold);border-radius:8px;font-size:11px;padding:6px 7px;letter-spacing:.5px;color:#fff}
+nav ul{display:flex;gap:26px;list-style:none}nav ul a{color:#c9d8e6;text-decoration:none;font-size:14px}nav ul a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;background:#25a865;color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:8px;font-size:15px}
+.btn:hover{background:#1f9257}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.35)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+header.hero{background:var(--navy);color:#fff;padding:90px 0 100px;position:relative;overflow:hidden}
+.hero svg.net{position:absolute;right:-60px;top:-40px;width:520px;opacity:.85}
+.kicker{color:var(--gold);font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:600}
+.hero h1{font-size:clamp(30px,5vw,50px);line-height:1.12;font-weight:700;letter-spacing:-1px;margin:16px 0 22px;max-width:760px}
+.hero h1 em{font-style:normal;color:var(--aqua)}
+.hero p{font-size:18px;color:#d5e2ee;max-width:640px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+section{padding:80px 0}section.alt{background:var(--soft)}
+h2{font-size:clamp(24px,3.2vw,32px);color:var(--navy);letter-spacing:-.5px;margin-bottom:10px}
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:10px}
+.eyebrow:before{content:"";width:26px;height:2px;background:var(--gold)}
+.sub{color:var(--mute);max-width:680px;margin-bottom:40px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pil{background:#fff;border:1px solid var(--line);border-top:3px solid var(--teal);border-radius:8px;padding:24px}
+.pil h3{color:var(--navy);font-size:18px;margin-bottom:8px}.pil p{color:var(--mute);font-size:15px}
+.sect{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.sect span{background:#fff;border:1px solid var(--line);border-radius:30px;padding:8px 16px;font-size:14px;color:var(--navy)}
+.kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:50px;background:#fff}
+.kpi div{padding:24px;border-right:1px solid var(--line);color:var(--mute);font-size:14px}.kpi div:last-child{border-right:0}
+.kpi b{display:block;font-size:34px;color:var(--navy);letter-spacing:-1px;line-height:1.2}
+.legend{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;color:var(--mute);margin:-20px 0 30px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px}
+.d1{background:#2f9e6b}.d2{background:#3b78c4}.d3{background:#d39a2c}
+.projs{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.proj{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px}
+.ph{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.proj h3{font-size:21px;color:var(--navy)}
+.st{font-size:13px;color:var(--mute);white-space:nowrap}
+.dom{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--teal);font-weight:700;margin:2px 0 10px}
+.proj p{font-size:15px}
+.res{background:var(--soft);border-left:3px solid var(--gold);padding:10px 14px;margin-top:14px;font-size:14.5px;color:var(--navy)}
+.tech{font-size:13px;color:var(--mute);margin-top:12px}
+.expl{margin-top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;font-size:15px;color:var(--mute)}
+.expl b{color:var(--navy);display:block}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.step .n{color:var(--gold);font-weight:700;font-size:15px}
+.step h3{color:var(--navy);font-size:19px;margin:6px 0}.step p{color:var(--mute);font-size:15px}
+.team{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.mem{border:1px solid var(--line);border-radius:10px;padding:26px;background:#fff}
+.mem h3{color:var(--navy);font-size:20px}.mem .r{color:var(--teal);font-weight:600;font-size:14px;margin:2px 0 10px}.mem p{color:var(--mute);font-size:15px}
+#contact{background:var(--navy);color:#fff}
+#contact h2{color:#fff}#contact .sub{color:#c9d8e6}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.cc{border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:26px}
+.cc h3{font-size:19px}.cc .r{color:var(--aqua);font-size:14px;margin-bottom:14px}
+.cc ul{list-style:none;margin-bottom:20px;color:#d5e2ee;font-size:15px}.cc li{margin-bottom:4px}
+.cc a{text-decoration:none}
+footer{background:#081f37;color:#8ea6bd;font-size:13px;padding:24px 0}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.fab{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25a865;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:20}
+.fab svg{width:28px;height:28px;fill:#fff}
+@media(max-width:860px){nav ul{display:none}.grid3,.projs,.steps,.team,.cards,.expl{grid-template-columns:1fr}.kpi{grid-template-columns:1fr 1fr}.kpi div:nth-child(2){border-right:0}.kpi div{border-bottom:1px solid var(--line)}section{padding:60px 0}header.hero{padding:60px 0 70px}.hero svg.net{opacity:.35}}
+</style></head><body>
+<nav><div class="wrap"><a href="#" class="brand"><span class="mono">AMD</span>AMD <span>Digital</span></a>
+<ul><li><a href="#expertise">Expertise</a></li><li><a href="#realisations">Réalisations</a></li><li><a href="#demarche">Démarche</a></li><li><a href="#equipe">Équipe</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<header class="hero"><svg class="net" viewBox="0 0 200 200" fill="none" stroke="#5fd0c6" stroke-width=".5"><g opacity=".3"><path d="M20 160 L70 110 L120 130 L170 60 L190 90"/><path d="M70 110 L95 50 L170 60"/><path d="M120 130 L150 170 L190 90"/><path d="M95 50 L140 20"/><path d="M40 70 L95 50"/><path d="M40 70 L70 110"/></g><g fill="#5fd0c6" stroke="none" opacity=".55"><circle cx="20" cy="160" r="1.6"/><circle cx="70" cy="110" r="2"/><circle cx="120" cy="130" r="1.6"/><circle cx="170" cy="60" r="2.4"/><circle cx="190" cy="90" r="1.4"/><circle cx="95" cy="50" r="1.8"/><circle cx="150" cy="170" r="1.4"/><circle cx="140" cy="20" r="1.4"/><circle cx="40" cy="70" r="1.4"/></g><circle cx="170" cy="60" r="6" stroke="#c2a15b" stroke-width=".6"/></svg>
+<div class="wrap"><div class="kicker">Intelligence artificielle · Djibouti</div>
+<h1>Anticiper la demande, les risques et les pics d’activité, <em>pour décider sur des faits.</em></h1>
+<p>AMD Digital analyse les données que vous possédez déjà — ventes, stocks, sinistres, trafics, escales — pour en tirer des prévisions concrètes et un véritable outil d’aide à la décision.</p>
+<div class="cta"><a class="btn" href="https://wa.me/25377694812?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Écrivez-nous sur WhatsApp</a><a class="btn ghost" href="#realisations">Voir nos réalisations</a></div></div></header>
+<section id="expertise" class="alt"><div class="wrap"><div class="eyebrow">Domaines d’expertise</div><h2>Ce que nous faisons</h2><p class="sub">Des outils d’IA construits sur vos propres chiffres, pour passer de l’intuition à l’anticipation.</p>
+<div class="grid3"><div class="pil"><h3>Prévision & analyse prédictive</h3><p>Séries temporelles, prévision de la demande, de la charge et des incidents, à partir de vos historiques.</p></div>
+<div class="pil"><h3>Aide à la décision</h3><p>Tableaux de bord, scores de priorité, alertes précoces et indicateurs expliqués.</p></div>
+<div class="pil"><h3>IA linguistique & plateformes</h3><p>Assistants conversationnels sourcés, détection de menaces multilingue — français, somali, afar, arabe — plateformes web et mobiles.</p></div></div>
+<div class="sect"><span>Énergie & distribution</span><span>Assurance</span><span>Transport & logistique</span><span>Maritime & aéroportuaire</span><span>Santé & pharmacie</span><span>Industrie</span></div>
+<div class="kpi"><div><b>02</b>Cofondateurs ingénieurs en IA</div><div><b>08</b>Solutions conçues et développées</div><div><b>04</b>Langues traitées par nos modèles</div><div><b>2026</b>Immatriculée à Djibouti · enregistrée UNGM</div></div></div></section>
+<section id="realisations"><div class="wrap"><div class="eyebrow">Nos réalisations</div><h2>Ce que nous avons déjà construit</h2><p class="sub">Chaque projet est présenté avec son stade réel d’avancement.</p>
+<div class="legend"><span><i class="dot d1"></i>Réalisé pour un client</span><span><i class="dot d2"></i>Prototype fonctionnel</span><span><i class="dot d3"></i>En développement</span></div>
+<div class="projs"><article class="proj"><div class="ph"><h3>Sales+</h3><span class="st"><i class="dot d1"></i>Réalisé pour un client</span></div><div class="dom">Scoring commercial</div><p>Modèle qui attribue un score à chaque opportunité commerciale pour concentrer l’équipe sur celles qui ont le plus de chances d’aboutir.</p><div class="res">Réalisé pour <b>OMOA Group</b> — Executive Master IA, ISAE-Supméca / ISM Paris, 2026.</div><div class="tech">Apprentissage automatique · scoring</div></article><article class="proj"><div class="ph"><h3>Maritime IA</h3><span class="st"><i class="dot d2"></i>Prototype fonctionnel</span></div><div class="dom">Port de Djibouti</div><p>Prévision hebdomadaire de la charge du port à partir des historiques et du suivi AIS des navires, en complément des systèmes existants.</p><div class="res">Sur 359 jours de test : erreur moyenne de <b>2,5 navires/semaine</b> pour une moyenne de 12,6 — <b>14 % de mieux</b> que la meilleure prévision naïve.</div><div class="tech">Python · séries temporelles · FMI PortWatch & AIS</div></article><article class="proj"><div class="ph"><h3>CorridorIQ</h3><span class="st"><i class="dot d2"></i>Prototype fonctionnel</span></div><div class="dom">Corridor Djibouti–Éthiopie</div><p>Estimation dynamique des délais de transit (ETA), indice de friction du corridor et alertes proactives.</p><div class="res">Moteur fonctionnel, 22 tests automatisés. Testé sur données simulées : <b>nous cherchons un partenaire pour passer sur données réelles.</b></div><div class="tech">Python · pytest · intégration continue</div></article><article class="proj"><div class="ph"><h3>NetSentinel</h3><span class="st"><i class="dot d2"></i>Prototype fonctionnel</span></div><div class="dom">Réseaux · administrations</div><p>Prédiction des pannes réseau 60 minutes à l’avance (latence, pertes de paquets, bande passante, CPU, température), avec explication de chaque alerte.</p><div class="res">Tableau de bord en 4 vues : supervision, prévision H+1, journal d’alertes, rapport de direction. Démontré sur données simulées.</div><div class="tech">LightGBM + LSTM · SHAP · React</div></article><article class="proj"><div class="ph"><h3>XeerAI</h3><span class="st"><i class="dot d2"></i>Prototype fonctionnel</span></div><div class="dom">Patrimoine · langues nationales</div><p>Assistant qui retrouve et cite les sources du Xeer Ciise, droit coutumier inscrit au patrimoine immatériel de l’UNESCO (2024). Il cite, n’interprète jamais, et dit « je ne sais pas » sans source.</p><div class="res">Présenté au concours du 1er Forum National sur l’IA (Djibouti, 2026).</div><div class="tech">RAG · recherche vectorielle · somali / français</div></article><article class="proj"><div class="ph"><h3>SENTINELLE</h3><span class="st"><i class="dot d2"></i>Prototype fonctionnel</span></div><div class="dom">Cybersécurité de l’IA</div><p>Détecteur d’injections de prompt — des instructions malveillantes visant les assistants IA — en français, arabe, somali et afar.</p><div class="res">Couvre des langues peu prises en charge par les outils existants.</div><div class="tech">Traitement automatique des langues · classification</div></article><article class="proj"><div class="ph"><h3>D-BILLET</h3><span class="st"><i class="dot d3"></i>En développement</span></div><div class="dom">Billetterie numérique · produit AMD Digital</div><p>Plateforme de billetterie conçue et développée par AMD Digital : événements, train (ligne vers Ali-Sabieh et Dire-Dawa), ferry vers Obock, module bus en préparation.</p><div class="res">Application web progressive (PWA) en pré-lancement.</div><div class="tech">PWA · paiement mobile</div></article><article class="proj"><div class="ph"><h3>Jabal IA</h3><span class="st"><i class="dot d3"></i>En développement</span></div><div class="dom">Éducation</div><p>Tuteur IA de mathématiques pour lycéens, aligné sur le programme djiboutien et conçu par un enseignant à partir des erreurs fréquentes des élèves.</p><div class="res">Premier module en développement ; présenté à la Journée nationale de la Recherche-Action du CFEN (oct. 2026).</div><div class="tech">Next.js · Python · recherche vectorielle</div></article></div>
+<div class="expl"><div><b>WalletIQ</b>Structuration des transactions mobile money (D-Money, Waafi…) pour la gestion financière des PME.</div><div><b>SchoolIQ</b>Suivi des frais de scolarité et rapprochement des paiements pour les écoles privées.</div><div><b>AgroIQ</b>Vision par ordinateur pour les entrepôts agroalimentaires.</div></div></div></section>
+<section id="demarche" class="alt"><div class="wrap"><div class="eyebrow">Notre démarche</div><h2>Commencer petit, mesurer, puis décider</h2><p class="sub">Nous proposons un pilote sur un périmètre limité ; son périmètre, sa durée et ses conditions sont définis ensemble.</p>
+<div class="steps"><div class="step"><div class="n">01</div><h3>Écouter</h3><p>Comprendre vos décisions et vos difficultés.</p></div><div class="step"><div class="n">02</div><h3>Cibler</h3><p>Un cas d’usage à valeur mesurable.</p></div><div class="step"><div class="n">03</div><h3>Pilote</h3><p>Sur vos données existantes, anonymisées, sous accord de confidentialité.</p></div><div class="step"><div class="n">04</div><h3>Mesurer</h3><p>Précision et gain opérationnel avant toute extension.</p></div></div></div></section>
+<section id="equipe"><div class="wrap"><div class="eyebrow">L’équipe</div><h2>Deux ingénieurs en IA, à Djibouti</h2><p class="sub">Une équipe locale qui connaît le terrain, les langues et les contraintes de la région.</p>
+<div class="team"><div class="mem"><h3>Aboubaker Mohamed Djama</h3><div class="r">Cofondateur · Ingénieur en IA</div><p>Executive Master en Ingénierie des Données, spécialité IA (ISAE-Supméca / ISM Paris, 2026). Projet de fin d’études : scoring d’opportunités commerciales pour OMOA Group. Licence Mathématiques-Informatique (Université de Djibouti).</p></div>
+<div class="mem"><h3>Arafad Abdi Galab</h3><div class="r">Cofondateur · IA pour la logistique</div><p>Executive Master en Ingénierie des Données, option IA (ISAE-Supméca / ISM Paris, 2026). Expérience en administration systèmes (MSC Shipping Djibouti) et en conformité bancaire. Spécialiste des données AIS et des séries temporelles.</p></div></div></div></section>
+<section id="contact"><div class="wrap"><div class="eyebrow" style="color:var(--aqua)">Contact</div><h2>Parlons de vos données</h2><p class="sub">Un échange de 20 minutes suffit pour identifier un premier cas d’usage.</p>
+<div class="cards"><div class="cc"><h3>Aboubaker Mohamed Djama</h3><div class="r">Cofondateur · Ingénieur en IA</div><ul><li><a href="tel:+25377694812">+253 77 69 48 12</a></li><li><a href="mailto:abodeaska@gmail.com">abodeaska@gmail.com</a></li><li><a href="https://www.linkedin.com/in/abobaker-mohamed-801126188" target="_blank" rel="noopener">LinkedIn</a></li></ul><a class="btn" href="https://wa.me/25377694812?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener">WhatsApp</a></div>
+<div class="cc"><h3>Arafad Abdi Galab</h3><div class="r">Cofondateur · IA pour la logistique</div><ul><li><a href="tel:+25377647490">+253 77 64 74 90</a></li><li><a href="mailto:nidarsan100@gmail.com">nidarsan100@gmail.com</a></li></ul><a class="btn" href="https://wa.me/25377647490?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener">WhatsApp</a></div></div></div></section>
+<footer><div class="wrap"><span>© 2026 AMD Digital · Entreprise djiboutienne · Quartier 6, Djibouti</span><span>Programmation, conseil et activités informatiques</span></div></footer>
+<a class="fab" href="https://wa.me/25377694812?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
+</body></html>
