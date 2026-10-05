@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background:#E4E6EA; font-family: 'Space Grotesk', system-ui, sans-serif; }
+  a { color: #1140FF; } a:hover { color: #0B2ACC; }
+</style>
+</helmet>
+
+  <section id="flyer" data-screen-label="Flyer" style="width:794px; height:1123px; position:relative; overflow:hidden; container-type:size; background:#FFFFFF; font-family:'Space Grotesk', system-ui, sans-serif; color:#0B0D10">
+    <div style="position:absolute; inset:0; display:grid; grid-template-rows:auto auto 1fr auto">
+
+      <div style="background:#0B0D10; padding:4.5cqw 6cqw 4.5cqw; display:flex; flex-direction:column; gap:4.5cqw">
+        <div style="display:flex; justify-content:space-between; align-items:center">
+          <div style="display:flex; align-items:center; gap:2.2cqw">
+            <svg viewBox="0 0 96 88" fill="none" style="width:8cqw; height:auto">
+              <path d="M48 4 L92 30 L48 56 L4 30 Z" fill="#FFFFFF"></path>
+              <path d="M4 46 L48 72 L92 46 L92 58 L48 84 L4 58 Z" fill="#1140FF"></path>
+              <path d="M48 20 L68 32 L48 44 L28 32 Z" fill="#0B0D10"></path>
+            </svg>
+            <div style="font-size:3.4cqw; font-weight:700; letter-spacing:0.02em; color:#FFFFFF">AMD DIGITAL</div>
+          </div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:1.7cqw; letter-spacing:0.22em; text-transform:uppercase; color:#9AA1AC">Djibouti</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:3cqw">
+          <h1 style="margin:0; font-size:8cqw; font-weight:700; line-height:0.98; letter-spacing:-0.035em; color:#FFFFFF">Digitalisez.<br>Automatisez.<br><span style="color:#5C7BFF">Connectez.</span></h1>
+          <p style="margin:0; max-width:70cqw; font-size:2.6cqw; line-height:1.45; color:#C9CDD4; text-wrap:pretty">Applications mobiles et web, intelligence artificielle et réseaux pour les administrations publiques et les entreprises.</p>
+        </div>
+      </div>
+
+      <div style="padding:4.5cqw 6cqw 0; display:flex; flex-direction:column; gap:3cqw">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:1.6cqw; letter-spacing:0.18em; text-transform:uppercase; color:#1140FF">Nos services</div>
+        <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:3cqw 4cqw">
+          <div style="display:flex; flex-direction:column; gap:0.9cqw; border-top:0.4cqw solid #0B0D10; padding-top:1.6cqw">
+            <div style="font-family:'JetBrains Mono',monospace; font-size:1.5cqw; color:#6B7280">01</div>
+            <div style="font-size:2.4cqw; font-weight:700; line-height:1.15">Applications mobiles</div>
+            <div style="font-size:1.75cqw; line-height:1.35; color:#4B5563">iOS et Android, React Native, Flutter.</div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:0.9cqw; border-top:0.4cqw solid #0B0D10; padding-top:1.6cqw">
+            <div style="font-family:'JetBrains Mono',monospace; font-size:1.5cqw; color:#6B7280">02</div>
+            <div style="font-size:2.4cqw; font-weight:700; line-height:1.15">Applications web</div>
+            <div style="font-size:1.75cqw; line-height:1.35; color:#4B5563">Portails, dashboards, SaaS, e-commerce.</div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:0.9cqw; border-top:0.4cqw solid #1140FF; padding-top:1.6cqw">
+            <div style="font-family:'JetBrains Mono',monospace; font-size:1.5cqw; color:#6B7280">03</div>
+            <div style="font-size:2.4cqw; font-weight:700; line-height:1.15">API &amp; modèles IA</div>
+            <div style="font-size:1.75cqw; line-height:1.35; color:#4B5563">Automatisation et IA intégrées à vos systèmes.</div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:0.9cqw; border-top:0.4cqw solid #0B0D10; padding-top:1.6cqw">
+            <div style="font-family:'JetBrains Mono',monospace; font-size:1.5cqw; color:#6B7280">04</div>
+            <div style="font-size:2.4cqw; font-weight:700; line-height:1.15">Installation réseau</div>
+            <div style="font-size:1.75cqw; line-height:1.35; color:#4B5563">Câblage, Wi-Fi 6, VPN, pare-feu.</div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:0.9cqw; border-top:0.4cqw solid #0B0D10; padding-top:1.6cqw">
+            <div style="font-family:'JetBrains Mono',monospace; font-size:1.5cqw; color:#6B7280">05</div>
+            <div style="font-size:2.4cqw; font-weight:700; line-height:1.15">Digitalisation admin.</div>
+            <div style="font-size:1.75cqw; line-height:1.35; color:#4B5563">Guichets en ligne, GED, workflows.</div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:0.9cqw; border-top:0.4cqw solid #0B0D10; padding-top:1.6cqw">
+            <div style="font-family:'JetBrains Mono',monospace; font-size:1.5cqw; color:#6B7280">06</div>
+            <div style="font-size:2.4cqw; font-weight:700; line-height:1.15">Cloud &amp; DevOps</div>
+            <div style="font-size:1.75cqw; line-height:1.35; color:#4B5563">AWS, Docker, CI/CD, maintenance.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding:3.5cqw 6cqw; display:flex; flex-direction:column; gap:2cqw">
+        <div style="font-family:'JetBrains Mono',monospace; font-size:1.6cqw; letter-spacing:0.18em; text-transform:uppercase; color:#1140FF">Nos produits</div>
+        <div style="display:flex; flex-wrap:wrap; gap:1.2cqw">
+          <div style="font-size:1.9cqw; font-weight:600; padding:1cqw 1.6cqw; background:#EEEFF1; border-radius:0.6cqw">Xeer-AI</div>
+          <div style="font-size:1.9cqw; font-weight:600; padding:1cqw 1.6cqw; background:#EEEFF1; border-radius:0.6cqw">D-Billet</div>
+          <div style="font-size:1.9cqw; font-weight:600; padding:1cqw 1.6cqw; background:#EEEFF1; border-radius:0.6cqw">Geeska-Customs-IA</div>
+          <div style="font-size:1.9cqw; font-weight:600; padding:1cqw 1.6cqw; background:#EEEFF1; border-radius:0.6cqw">SmartEtud</div>
+          <div style="font-size:1.9cqw; font-weight:600; padding:1cqw 1.6cqw; background:#EEEFF1; border-radius:0.6cqw">MediSmart-IA</div>
+        </div>
+      </div>
+
+      <div style="background:#1140FF; padding:4.5cqw 6cqw; display:flex; justify-content:space-between; align-items:flex-end; gap:4cqw">
+        <div style="display:flex; flex-direction:column; gap:1.4cqw">
+          <div style="font-size:4.6cqw; font-weight:700; letter-spacing:-0.02em; line-height:1; color:#FFFFFF">Démarrons votre projet</div>
+          <div style="font-size:2cqw; color:#FFFFFF">Sam–Jeu · 08h00 – 17h00</div>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:flex-end; gap:1cqw; font-family:'JetBrains Mono',monospace; color:#FFFFFF">
+          <div style="font-size:3cqw; font-weight:500">+253 77 69 48 12</div>
+          <div style="font-size:2cqw">contact@amd-digital.com</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</x-dc>
+</body>
+</html>
