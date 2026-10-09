@@ -2,8 +2,22 @@
 <html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AMD Digital — Prévision et aide à la décision par l’IA · Djibouti</title>
 <meta name="description" content="AMD Digital, entreprise djiboutienne d’intelligence artificielle : prévision de la demande, des risques et des pics d’activité, et outils d’aide à la décision à partir de vos propres données.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b2a4a'/%3E%3Ctext x='32' y='40' font-family='Arial' font-weight='700' font-size='20' fill='%235fd0c6' text-anchor='middle'%3EAMD%3C/text%3E%3C/svg%3E">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/brand/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0B0D10">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AMD Digital">
+<meta property="og:title" content="AMD Digital — Prévision et aide à la décision par l’IA · Djibouti">
+<meta property="og:description" content="Prévision de la demande, des risques et des pics d’activité, et outils d’aide à la décision à partir de vos propres données.">
+<meta property="og:url" content="https://chimerical-sorbet-c1feca.netlify.app/">
+<meta property="og:image" content="https://chimerical-sorbet-c1feca.netlify.app/assets/brand/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo AMD Digital">
+<meta name="twitter:card" content="summary_large_image">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#0b2a4a;--teal:#178f8b;--aqua:#5fd0c6;--gold:#c2a15b;--ink:#1c2632;--mute:#5f6b78;--line:#e3e7ec;--soft:#f5f7f9}
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
@@ -12,9 +26,8 @@ a{color:inherit}
 .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
 nav{position:sticky;top:0;background:rgba(11,42,74,.97);z-index:10}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
-.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;font-size:18px}
-.brand span{color:var(--aqua)}
-.mono{border:1.5px solid var(--gold);border-radius:8px;font-size:11px;padding:6px 7px;letter-spacing:.5px;color:#fff}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:'Space Grotesk',Inter,Arial,sans-serif;font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.02em}
+.brand svg{height:28px;width:auto;flex:none}
 nav ul{display:flex;gap:26px;list-style:none}nav ul a{color:#c9d8e6;text-decoration:none;font-size:14px}nav ul a:hover{color:#fff}
 .btn{display:inline-flex;align-items:center;gap:8px;background:#25a865;color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:8px;font-size:15px}
 .btn:hover{background:#1f9257}
@@ -66,14 +79,21 @@ h2{font-size:clamp(24px,3.2vw,32px);color:var(--navy);letter-spacing:-.5px;margi
 .cc{border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:26px}
 .cc h3{font-size:19px}.cc .r{color:var(--aqua);font-size:14px;margin-bottom:14px}
 .cc ul{list-style:none;margin-bottom:20px;color:#d5e2ee;font-size:15px}.cc li{margin-bottom:4px}
-.cc a{text-decoration:none}
-footer{background:#081f37;color:#8ea6bd;font-size:13px;padding:24px 0}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.cc a{text-decoration:none;overflow-wrap:anywhere}
+footer{background:#081f37;color:#8ea6bd;font-size:14px;padding:56px 0 0}
+footer a{color:#c9d8e6;text-decoration:none;overflow-wrap:anywhere}footer a:hover{color:#fff}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1.6fr;gap:40px;padding-bottom:40px}
+footer .brand{margin-bottom:14px}
+.fsig{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--aqua);margin-bottom:12px}
+footer h4{color:#fff;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;margin-bottom:14px}
+footer ul{list-style:none}footer li{margin-bottom:8px}
+.fcontact li span{display:block;color:#fff;font-size:13px;font-weight:600}
+.fbar{border-top:1px solid rgba(255,255,255,.1);padding:18px 0 22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px}
 .fab{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25a865;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:20}
 .fab svg{width:28px;height:28px;fill:#fff}
-@media(max-width:860px){nav ul{display:none}.grid3,.projs,.steps,.team,.cards,.expl{grid-template-columns:1fr}.kpi{grid-template-columns:1fr 1fr}.kpi div:nth-child(2){border-right:0}.kpi div{border-bottom:1px solid var(--line)}section{padding:60px 0}header.hero{padding:60px 0 70px}.hero svg.net{opacity:.35}}
+@media(max-width:860px){.fgrid{grid-template-columns:1fr;gap:30px}.fbar{padding-bottom:90px}nav ul{display:none}.grid3,.projs,.steps,.team,.cards,.expl{grid-template-columns:1fr}.kpi{grid-template-columns:1fr 1fr}.kpi div:nth-child(2){border-right:0}.kpi div{border-bottom:1px solid var(--line)}section{padding:60px 0}header.hero{padding:60px 0 70px}.hero svg.net{opacity:.35}}
 </style></head><body>
-<nav><div class="wrap"><a href="#" class="brand"><span class="mono">AMD</span>AMD <span>Digital</span></a>
+<nav><div class="wrap"><a href="#" class="brand" aria-label="AMD Digital — accueil"><svg viewBox="4 4 88 80" aria-hidden="true"><path fill="#FFFFFF" fill-rule="evenodd" d="M48 4 L92 30 L48 56 L4 30 Z M48 20 L28 32 L48 44 L68 32 Z"/><path fill="#1140FF" d="M4 46 L48 72 L92 46 L92 58 L48 84 L4 58 Z"/></svg>AMD Digital</a>
 <ul><li><a href="#expertise">Expertise</a></li><li><a href="#realisations">Réalisations</a></li><li><a href="#demarche">Démarche</a></li><li><a href="#equipe">Équipe</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
 <header class="hero"><svg class="net" viewBox="0 0 200 200" fill="none" stroke="#5fd0c6" stroke-width=".5"><g opacity=".3"><path d="M20 160 L70 110 L120 130 L170 60 L190 90"/><path d="M70 110 L95 50 L170 60"/><path d="M120 130 L150 170 L190 90"/><path d="M95 50 L140 20"/><path d="M40 70 L95 50"/><path d="M40 70 L70 110"/></g><g fill="#5fd0c6" stroke="none" opacity=".55"><circle cx="20" cy="160" r="1.6"/><circle cx="70" cy="110" r="2"/><circle cx="120" cy="130" r="1.6"/><circle cx="170" cy="60" r="2.4"/><circle cx="190" cy="90" r="1.4"/><circle cx="95" cy="50" r="1.8"/><circle cx="150" cy="170" r="1.4"/><circle cx="140" cy="20" r="1.4"/><circle cx="40" cy="70" r="1.4"/></g><circle cx="170" cy="60" r="6" stroke="#c2a15b" stroke-width=".6"/></svg>
 <div class="wrap"><div class="kicker">Intelligence artificielle · Djibouti</div>
@@ -96,8 +116,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <div class="team"><div class="mem"><h3>Aboubaker Mohamed Djama</h3><div class="r">Cofondateur · Ingénieur en IA</div><p>Executive Master en Ingénierie des Données, spécialité IA (ISAE-Supméca / ISM Paris, 2026). Projet de fin d’études : scoring d’opportunités commerciales pour OMOA Group. Licence Mathématiques-Informatique (Université de Djibouti).</p></div>
 <div class="mem"><h3>Arafad Abdi Galab</h3><div class="r">Cofondateur · IA pour la logistique</div><p>Executive Master en Ingénierie des Données, option IA (ISAE-Supméca / ISM Paris, 2026). Expérience en administration systèmes (MSC Shipping Djibouti) et en conformité bancaire. Spécialiste des données AIS et des séries temporelles.</p></div></div></div></section>
 <section id="contact"><div class="wrap"><div class="eyebrow" style="color:var(--aqua)">Contact</div><h2>Parlons de vos données</h2><p class="sub">Un échange de 20 minutes suffit pour identifier un premier cas d’usage.</p>
-<div class="cards"><div class="cc"><h3>Aboubaker Mohamed Djama</h3><div class="r">Cofondateur · Ingénieur en IA</div><ul><li><a href="tel:+25377694812">+253 77 69 48 12</a></li><li><a href="mailto:abodeaska@gmail.com">abodeaska@gmail.com</a></li><li><a href="https://www.linkedin.com/in/abobaker-mohamed-801126188" target="_blank" rel="noopener">LinkedIn</a></li></ul><a class="btn" href="https://wa.me/25377694812?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener">WhatsApp</a></div>
-<div class="cc"><h3>Arafad Abdi Galab</h3><div class="r">Cofondateur · IA pour la logistique</div><ul><li><a href="tel:+25377647490">+253 77 64 74 90</a></li><li><a href="mailto:nidarsan100@gmail.com">nidarsan100@gmail.com</a></li></ul><a class="btn" href="https://wa.me/25377647490?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener">WhatsApp</a></div></div></div></section>
-<footer><div class="wrap"><span>© 2026 AMD Digital · Entreprise djiboutienne · Quartier 6, Djibouti</span><span>Programmation, conseil et activités informatiques</span></div></footer>
+<div class="cards"><div class="cc"><h3>Aboubaker Mohamed Djama</h3><div class="r">Cofondateur · Ingénieur en IA</div><ul><li><a href="tel:+25377694812">+253 77 69 48 12</a></li><li><a href="mailto:abobaker.mohamed@amd-digital.tech">abobaker.mohamed@amd-digital.tech</a></li><li><a href="https://www.linkedin.com/in/abobaker-mohamed-801126188" target="_blank" rel="noopener">LinkedIn</a></li></ul><a class="btn" href="https://wa.me/25377694812?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener">WhatsApp</a></div>
+<div class="cc"><h3>Arafad Abdi Galab</h3><div class="r">Cofondateur · IA pour la logistique</div><ul><li><a href="tel:+25377647490">+253 77 64 74 90</a></li><li><a href="mailto:arafad.abdi@amd-digital.tech">arafad.abdi@amd-digital.tech</a></li></ul><a class="btn" href="https://wa.me/25377647490?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener">WhatsApp</a></div></div></div></section>
+<footer><div class="wrap"><div class="fgrid"><div><a href="#" class="brand" aria-label="AMD Digital — accueil"><svg viewBox="4 4 88 80" aria-hidden="true"><path fill="#FFFFFF" fill-rule="evenodd" d="M48 4 L92 30 L48 56 L4 30 Z M48 20 L28 32 L48 44 L68 32 Z"/><path fill="#1140FF" d="M4 46 L48 72 L92 46 L92 58 L48 84 L4 58 Z"/></svg>AMD Digital</a><div class="fsig">Mobile · Web · IA · Réseau</div><p>Entreprise djiboutienne d’intelligence artificielle : prévision et aide à la décision à partir de vos propres données.</p></div><div><h4>Navigation</h4><ul><li><a href="#expertise">Expertise</a></li><li><a href="#realisations">Réalisations</a></li><li><a href="#demarche">Démarche</a></li><li><a href="#equipe">Équipe</a></li><li><a href="#contact">Contact</a></li></ul></div><div><h4>Contact</h4><ul class="fcontact"><li><span>Aboubaker Mohamed Djama</span><a href="mailto:abobaker.mohamed@amd-digital.tech">abobaker.mohamed@amd-digital.tech</a><br><a href="tel:+25377694812">+253 77 69 48 12</a></li><li><span>Arafad Abdi Galab</span><a href="mailto:arafad.abdi@amd-digital.tech">arafad.abdi@amd-digital.tech</a><br><a href="tel:+25377647490">+253 77 64 74 90</a></li><li>Quartier 6, Djibouti</li></ul></div></div><div class="fbar"><span>© 2026 AMD Digital · Entreprise djiboutienne</span><span>Programmation, conseil et activités informatiques</span></div></div></footer>
 <a class="fab" href="https://wa.me/25377694812?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
 </body></html>
