@@ -1,123 +1,224 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AMD Digital — Prévision et aide à la décision par l’IA · Djibouti</title>
 <meta name="description" content="AMD Digital, entreprise djiboutienne d’intelligence artificielle : prévision de la demande, des risques et des pics d’activité, et outils d’aide à la décision à partir de vos propres données.">
+<link rel="canonical" href="https://amd-digital.tech/">
 <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/brand/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#0B0D10">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AMD Digital">
 <meta property="og:title" content="AMD Digital — Prévision et aide à la décision par l’IA · Djibouti">
 <meta property="og:description" content="Prévision de la demande, des risques et des pics d’activité, et outils d’aide à la décision à partir de vos propres données.">
-<meta property="og:url" content="https://chimerical-sorbet-c1feca.netlify.app/">
-<meta property="og:image" content="https://chimerical-sorbet-c1feca.netlify.app/assets/brand/og-image.png">
+<meta property="og:url" content="https://amd-digital.tech/">
+<meta property="og:image" content="https://amd-digital.tech/assets/brand/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Logo AMD Digital">
 <meta name="twitter:card" content="summary_large_image">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#0b2a4a;--teal:#178f8b;--aqua:#5fd0c6;--gold:#c2a15b;--ink:#1c2632;--mute:#5f6b78;--line:#e3e7ec;--soft:#f5f7f9}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:Inter,Arial,sans-serif;color:var(--ink);line-height:1.6;background:#fff;font-size:16px}
-a{color:inherit}
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-nav{position:sticky;top:0;background:rgba(11,42,74,.97);z-index:10}
-nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
-.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:'Space Grotesk',Inter,Arial,sans-serif;font-weight:700;font-size:18px;text-transform:uppercase;letter-spacing:.02em}
-.brand svg{height:28px;width:auto;flex:none}
-nav ul{display:flex;gap:26px;list-style:none}nav ul a{color:#c9d8e6;text-decoration:none;font-size:14px}nav ul a:hover{color:#fff}
-.btn{display:inline-flex;align-items:center;gap:8px;background:#25a865;color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:8px;font-size:15px}
-.btn:hover{background:#1f9257}
-.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.35)}
-.btn svg{width:18px;height:18px;fill:currentColor}
-header.hero{background:var(--navy);color:#fff;padding:90px 0 100px;position:relative;overflow:hidden}
-.hero svg.net{position:absolute;right:-60px;top:-40px;width:520px;opacity:.85}
-.kicker{color:var(--gold);font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:600}
-.hero h1{font-size:clamp(30px,5vw,50px);line-height:1.12;font-weight:700;letter-spacing:-1px;margin:16px 0 22px;max-width:760px}
-.hero h1 em{font-style:normal;color:var(--aqua)}
-.hero p{font-size:18px;color:#d5e2ee;max-width:640px}
-.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
-section{padding:80px 0}section.alt{background:var(--soft)}
-h2{font-size:clamp(24px,3.2vw,32px);color:var(--navy);letter-spacing:-.5px;margin-bottom:10px}
-.eyebrow{display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:10px}
-.eyebrow:before{content:"";width:26px;height:2px;background:var(--gold)}
-.sub{color:var(--mute);max-width:680px;margin-bottom:40px}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.pil{background:#fff;border:1px solid var(--line);border-top:3px solid var(--teal);border-radius:8px;padding:24px}
-.pil h3{color:var(--navy);font-size:18px;margin-bottom:8px}.pil p{color:var(--mute);font-size:15px}
-.sect{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
-.sect span{background:#fff;border:1px solid var(--line);border-radius:30px;padding:8px 16px;font-size:14px;color:var(--navy)}
-.kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:50px;background:#fff}
-.kpi div{padding:24px;border-right:1px solid var(--line);color:var(--mute);font-size:14px}.kpi div:last-child{border-right:0}
-.kpi b{display:block;font-size:34px;color:var(--navy);letter-spacing:-1px;line-height:1.2}
-.legend{display:flex;gap:22px;flex-wrap:wrap;font-size:14px;color:var(--mute);margin:-20px 0 30px}
-.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px}
-.d1{background:#2f9e6b}.d2{background:#3b78c4}.d3{background:#d39a2c}
-.projs{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-.proj{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px}
-.ph{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
-.proj h3{font-size:21px;color:var(--navy)}
-.st{font-size:13px;color:var(--mute);white-space:nowrap}
-.dom{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--teal);font-weight:700;margin:2px 0 10px}
-.proj p{font-size:15px}
-.res{background:var(--soft);border-left:3px solid var(--gold);padding:10px 14px;margin-top:14px;font-size:14.5px;color:var(--navy)}
-.tech{font-size:13px;color:var(--mute);margin-top:12px}
-.expl{margin-top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;font-size:15px;color:var(--mute)}
-.expl b{color:var(--navy);display:block}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-.step .n{color:var(--gold);font-weight:700;font-size:15px}
-.step h3{color:var(--navy);font-size:19px;margin:6px 0}.step p{color:var(--mute);font-size:15px}
-.team{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.mem{border:1px solid var(--line);border-radius:10px;padding:26px;background:#fff}
-.mem h3{color:var(--navy);font-size:20px}.mem .r{color:var(--teal);font-weight:600;font-size:14px;margin:2px 0 10px}.mem p{color:var(--mute);font-size:15px}
-#contact{background:var(--navy);color:#fff}
-#contact h2{color:#fff}#contact .sub{color:#c9d8e6}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.cc{border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:26px}
-.cc h3{font-size:19px}.cc .r{color:var(--aqua);font-size:14px;margin-bottom:14px}
-.cc ul{list-style:none;margin-bottom:20px;color:#d5e2ee;font-size:15px}.cc li{margin-bottom:4px}
-.cc a{text-decoration:none;overflow-wrap:anywhere}
-footer{background:#081f37;color:#8ea6bd;font-size:14px;padding:56px 0 0}
-footer a{color:#c9d8e6;text-decoration:none;overflow-wrap:anywhere}footer a:hover{color:#fff}
-.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1.6fr;gap:40px;padding-bottom:40px}
-footer .brand{margin-bottom:14px}
-.fsig{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--aqua);margin-bottom:12px}
-footer h4{color:#fff;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;margin-bottom:14px}
-footer ul{list-style:none}footer li{margin-bottom:8px}
-.fcontact li span{display:block;color:#fff;font-size:13px;font-weight:600}
-.fbar{border-top:1px solid rgba(255,255,255,.1);padding:18px 0 22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px}
-.fab{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25a865;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:20}
-.fab svg{width:28px;height:28px;fill:#fff}
-@media(max-width:860px){.fgrid{grid-template-columns:1fr;gap:30px}.fbar{padding-bottom:90px}nav ul{display:none}.grid3,.projs,.steps,.team,.cards,.expl{grid-template-columns:1fr}.kpi{grid-template-columns:1fr 1fr}.kpi div:nth-child(2){border-right:0}.kpi div{border-bottom:1px solid var(--line)}section{padding:60px 0}header.hero{padding:60px 0 70px}.hero svg.net{opacity:.35}}
-</style></head><body>
-<nav><div class="wrap"><a href="#" class="brand" aria-label="AMD Digital — accueil"><svg viewBox="4 4 88 80" aria-hidden="true"><path fill="#FFFFFF" fill-rule="evenodd" d="M48 4 L92 30 L48 56 L4 30 Z M48 20 L28 32 L48 44 L68 32 Z"/><path fill="#1140FF" d="M4 46 L48 72 L92 46 L92 58 L48 84 L4 58 Z"/></svg>AMD Digital</a>
-<ul><li><a href="#expertise">Expertise</a></li><li><a href="#realisations">Réalisations</a></li><li><a href="#demarche">Démarche</a></li><li><a href="#equipe">Équipe</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
-<header class="hero"><svg class="net" viewBox="0 0 200 200" fill="none" stroke="#5fd0c6" stroke-width=".5"><g opacity=".3"><path d="M20 160 L70 110 L120 130 L170 60 L190 90"/><path d="M70 110 L95 50 L170 60"/><path d="M120 130 L150 170 L190 90"/><path d="M95 50 L140 20"/><path d="M40 70 L95 50"/><path d="M40 70 L70 110"/></g><g fill="#5fd0c6" stroke="none" opacity=".55"><circle cx="20" cy="160" r="1.6"/><circle cx="70" cy="110" r="2"/><circle cx="120" cy="130" r="1.6"/><circle cx="170" cy="60" r="2.4"/><circle cx="190" cy="90" r="1.4"/><circle cx="95" cy="50" r="1.8"/><circle cx="150" cy="170" r="1.4"/><circle cx="140" cy="20" r="1.4"/><circle cx="40" cy="70" r="1.4"/></g><circle cx="170" cy="60" r="6" stroke="#c2a15b" stroke-width=".6"/></svg>
-<div class="wrap"><div class="kicker">Intelligence artificielle · Djibouti</div>
-<h1>Anticiper la demande, les risques et les pics d’activité, <em>pour décider sur des faits.</em></h1>
-<p>AMD Digital analyse les données que vous possédez déjà — ventes, stocks, sinistres, trafics, escales — pour en tirer des prévisions concrètes et un véritable outil d’aide à la décision.</p>
-<div class="cta"><a class="btn" href="https://wa.me/25377694812?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Écrivez-nous sur WhatsApp</a><a class="btn ghost" href="#realisations">Voir nos réalisations</a></div></div></header>
-<section id="expertise" class="alt"><div class="wrap"><div class="eyebrow">Domaines d’expertise</div><h2>Ce que nous faisons</h2><p class="sub">Des outils d’IA construits sur vos propres chiffres, pour passer de l’intuition à l’anticipation.</p>
-<div class="grid3"><div class="pil"><h3>Prévision & analyse prédictive</h3><p>Séries temporelles, prévision de la demande, de la charge et des incidents, à partir de vos historiques.</p></div>
-<div class="pil"><h3>Aide à la décision</h3><p>Tableaux de bord, scores de priorité, alertes précoces et indicateurs expliqués.</p></div>
-<div class="pil"><h3>IA linguistique & plateformes</h3><p>Assistants conversationnels sourcés, détection de menaces multilingue — français, somali, afar, arabe — plateformes web et mobiles.</p></div></div>
-<div class="sect"><span>Énergie & distribution</span><span>Assurance</span><span>Transport & logistique</span><span>Maritime & aéroportuaire</span><span>Santé & pharmacie</span><span>Industrie</span></div>
-<div class="kpi"><div><b>02</b>Cofondateurs ingénieurs en IA</div><div><b>08</b>Solutions conçues et développées</div><div><b>04</b>Langues traitées par nos modèles</div><div><b>2026</b>Immatriculée à Djibouti · enregistrée UNGM</div></div></div></section>
-<section id="realisations"><div class="wrap"><div class="eyebrow">Nos réalisations</div><h2>Ce que nous avons déjà construit</h2><p class="sub">Chaque projet est présenté avec son stade réel d’avancement.</p>
-<div class="legend"><span><i class="dot d1"></i>Réalisé pour un client</span><span><i class="dot d2"></i>Prototype fonctionnel</span><span><i class="dot d3"></i>En développement</span></div>
-<div class="projs"><article class="proj"><div class="ph"><h3>Sales+</h3><span class="st"><i class="dot d1"></i>Réalisé pour un client</span></div><div class="dom">Scoring commercial</div><p>Modèle qui attribue un score à chaque opportunité commerciale pour concentrer l’équipe sur celles qui ont le plus de chances d’aboutir.</p><div class="res">Réalisé pour <b>OMOA Group</b> — Executive Master IA, ISAE-Supméca / ISM Paris, 2026.</div><div class="tech">Apprentissage automatique · scoring</div></article><article class="proj"><div class="ph"><h3>Maritime IA</h3><span class="st"><i class="dot d2"></i>Prototype fonctionnel</span></div><div class="dom">Port de Djibouti</div><p>Prévision hebdomadaire de la charge du port à partir des historiques et du suivi AIS des navires, en complément des systèmes existants.</p><div class="res">Sur 359 jours de test : erreur moyenne de <b>2,5 navires/semaine</b> pour une moyenne de 12,6 — <b>14 % de mieux</b> que la meilleure prévision naïve.</div><div class="tech">Python · séries temporelles · FMI PortWatch & AIS</div></article><article class="proj"><div class="ph"><h3>CorridorIQ</h3><span class="st"><i class="dot d2"></i>Prototype fonctionnel</span></div><div class="dom">Corridor Djibouti–Éthiopie</div><p>Estimation dynamique des délais de transit (ETA), indice de friction du corridor et alertes proactives.</p><div class="res">Moteur fonctionnel, 22 tests automatisés. Testé sur données simulées : <b>nous cherchons un partenaire pour passer sur données réelles.</b></div><div class="tech">Python · pytest · intégration continue</div></article><article class="proj"><div class="ph"><h3>NetSentinel</h3><span class="st"><i class="dot d2"></i>Prototype fonctionnel</span></div><div class="dom">Réseaux · administrations</div><p>Prédiction des pannes réseau 60 minutes à l’avance (latence, pertes de paquets, bande passante, CPU, température), avec explication de chaque alerte.</p><div class="res">Tableau de bord en 4 vues : supervision, prévision H+1, journal d’alertes, rapport de direction. Démontré sur données simulées.</div><div class="tech">LightGBM + LSTM · SHAP · React</div></article><article class="proj"><div class="ph"><h3>XeerAI</h3><span class="st"><i class="dot d2"></i>Prototype fonctionnel</span></div><div class="dom">Patrimoine · langues nationales</div><p>Assistant qui retrouve et cite les sources du Xeer Ciise, droit coutumier inscrit au patrimoine immatériel de l’UNESCO (2024). Il cite, n’interprète jamais, et dit « je ne sais pas » sans source.</p><div class="res">Présenté au concours du 1er Forum National sur l’IA (Djibouti, 2026).</div><div class="tech">RAG · recherche vectorielle · somali / français</div></article><article class="proj"><div class="ph"><h3>SENTINELLE</h3><span class="st"><i class="dot d2"></i>Prototype fonctionnel</span></div><div class="dom">Cybersécurité de l’IA</div><p>Détecteur d’injections de prompt — des instructions malveillantes visant les assistants IA — en français, arabe, somali et afar.</p><div class="res">Couvre des langues peu prises en charge par les outils existants.</div><div class="tech">Traitement automatique des langues · classification</div></article><article class="proj"><div class="ph"><h3>D-BILLET</h3><span class="st"><i class="dot d3"></i>En développement</span></div><div class="dom">Billetterie numérique · produit AMD Digital</div><p>Plateforme de billetterie conçue et développée par AMD Digital : événements, train (ligne vers Ali-Sabieh et Dire-Dawa), ferry vers Obock, module bus en préparation.</p><div class="res">Application web progressive (PWA) en pré-lancement.</div><div class="tech">PWA · paiement mobile</div></article><article class="proj"><div class="ph"><h3>Jabal IA</h3><span class="st"><i class="dot d3"></i>En développement</span></div><div class="dom">Éducation</div><p>Tuteur IA de mathématiques pour lycéens, aligné sur le programme djiboutien et conçu par un enseignant à partir des erreurs fréquentes des élèves.</p><div class="res">Premier module en développement ; présenté à la Journée nationale de la Recherche-Action du CFEN (oct. 2026).</div><div class="tech">Next.js · Python · recherche vectorielle</div></article></div>
-<div class="expl"><div><b>WalletIQ</b>Structuration des transactions mobile money (D-Money, Waafi…) pour la gestion financière des PME.</div><div><b>SchoolIQ</b>Suivi des frais de scolarité et rapprochement des paiements pour les écoles privées.</div><div><b>AgroIQ</b>Vision par ordinateur pour les entrepôts agroalimentaires.</div></div></div></section>
-<section id="demarche" class="alt"><div class="wrap"><div class="eyebrow">Notre démarche</div><h2>Commencer petit, mesurer, puis décider</h2><p class="sub">Nous proposons un pilote sur un périmètre limité ; son périmètre, sa durée et ses conditions sont définis ensemble.</p>
-<div class="steps"><div class="step"><div class="n">01</div><h3>Écouter</h3><p>Comprendre vos décisions et vos difficultés.</p></div><div class="step"><div class="n">02</div><h3>Cibler</h3><p>Un cas d’usage à valeur mesurable.</p></div><div class="step"><div class="n">03</div><h3>Pilote</h3><p>Sur vos données existantes, anonymisées, sous accord de confidentialité.</p></div><div class="step"><div class="n">04</div><h3>Mesurer</h3><p>Précision et gain opérationnel avant toute extension.</p></div></div></div></section>
-<section id="equipe"><div class="wrap"><div class="eyebrow">L’équipe</div><h2>Deux ingénieurs en IA, à Djibouti</h2><p class="sub">Une équipe locale qui connaît le terrain, les langues et les contraintes de la région.</p>
-<div class="team"><div class="mem"><h3>Aboubaker Mohamed Djama</h3><div class="r">Cofondateur · Ingénieur en IA</div><p>Executive Master en Ingénierie des Données, spécialité IA (ISAE-Supméca / ISM Paris, 2026). Projet de fin d’études : scoring d’opportunités commerciales pour OMOA Group. Licence Mathématiques-Informatique (Université de Djibouti).</p></div>
-<div class="mem"><h3>Arafad Abdi Galab</h3><div class="r">Cofondateur · IA pour la logistique</div><p>Executive Master en Ingénierie des Données, option IA (ISAE-Supméca / ISM Paris, 2026). Expérience en administration systèmes (MSC Shipping Djibouti) et en conformité bancaire. Spécialiste des données AIS et des séries temporelles.</p></div></div></div></section>
-<section id="contact"><div class="wrap"><div class="eyebrow" style="color:var(--aqua)">Contact</div><h2>Parlons de vos données</h2><p class="sub">Un échange de 20 minutes suffit pour identifier un premier cas d’usage.</p>
-<div class="cards"><div class="cc"><h3>Aboubaker Mohamed Djama</h3><div class="r">Cofondateur · Ingénieur en IA</div><ul><li><a href="tel:+25377694812">+253 77 69 48 12</a></li><li><a href="mailto:abobaker.mohamed@amd-digital.tech">abobaker.mohamed@amd-digital.tech</a></li><li><a href="https://www.linkedin.com/in/abobaker-mohamed-801126188" target="_blank" rel="noopener">LinkedIn</a></li></ul><a class="btn" href="https://wa.me/25377694812?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener">WhatsApp</a></div>
-<div class="cc"><h3>Arafad Abdi Galab</h3><div class="r">Cofondateur · IA pour la logistique</div><ul><li><a href="tel:+25377647490">+253 77 64 74 90</a></li><li><a href="mailto:arafad.abdi@amd-digital.tech">arafad.abdi@amd-digital.tech</a></li></ul><a class="btn" href="https://wa.me/25377647490?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener">WhatsApp</a></div></div></div></section>
-<footer><div class="wrap"><div class="fgrid"><div><a href="#" class="brand" aria-label="AMD Digital — accueil"><svg viewBox="4 4 88 80" aria-hidden="true"><path fill="#FFFFFF" fill-rule="evenodd" d="M48 4 L92 30 L48 56 L4 30 Z M48 20 L28 32 L48 44 L68 32 Z"/><path fill="#1140FF" d="M4 46 L48 72 L92 46 L92 58 L48 84 L4 58 Z"/></svg>AMD Digital</a><div class="fsig">Mobile · Web · IA · Réseau</div><p>Entreprise djiboutienne d’intelligence artificielle : prévision et aide à la décision à partir de vos propres données.</p></div><div><h4>Navigation</h4><ul><li><a href="#expertise">Expertise</a></li><li><a href="#realisations">Réalisations</a></li><li><a href="#demarche">Démarche</a></li><li><a href="#equipe">Équipe</a></li><li><a href="#contact">Contact</a></li></ul></div><div><h4>Contact</h4><ul class="fcontact"><li><span>Aboubaker Mohamed Djama</span><a href="mailto:abobaker.mohamed@amd-digital.tech">abobaker.mohamed@amd-digital.tech</a><br><a href="tel:+25377694812">+253 77 69 48 12</a></li><li><span>Arafad Abdi Galab</span><a href="mailto:arafad.abdi@amd-digital.tech">arafad.abdi@amd-digital.tech</a><br><a href="tel:+25377647490">+253 77 64 74 90</a></li><li>Quartier 6, Djibouti</li></ul></div></div><div class="fbar"><span>© 2026 AMD Digital · Entreprise djiboutienne</span><span>Programmation, conseil et activités informatiques</span></div></div></footer>
-<a class="fab" href="https://wa.me/25377694812?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
-</body></html>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Navigation principale">
+  <div class="wrap">
+    <a href="#" class="brand" aria-label="AMD Digital — accueil"><svg viewBox="4 4 88 80" aria-hidden="true"><path class="top" fill-rule="evenodd" d="M48 4 L92 30 L48 56 L4 30 Z M48 20 L28 32 L48 44 L68 32 Z"/><path class="base" d="M4 46 L48 72 L92 46 L92 58 L48 84 L4 58 Z"/></svg>AMD Digital</a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    <div class="nav-links" id="menu"><a href="#expertise">Expertise</a><a href="#realisations">Réalisations</a><a href="#demarche">Démarche</a><a href="#equipe">Équipe</a><a class="btn sm" href="#contact">Nous contacter</a></div>
+  </div>
+</nav>
+
+<main>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Intelligence artificielle · Djibouti</div>
+    <h1>Anticiper la demande, les risques et les pics d’activité, <em>pour décider sur des faits.</em></h1>
+    <p class="lead">AMD Digital analyse les données que vous possédez déjà — ventes, stocks, sinistres, trafics, escales — pour en tirer des prévisions concrètes et un véritable outil d’aide à la décision.</p>
+    <div class="cta">
+      <a class="btn wa" href="https://wa.me/25377694812?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Écrivez-nous sur WhatsApp</a>
+      <a class="link" href="#realisations">Voir nos réalisations</a>
+    </div>
+    <div class="stage reveal" aria-hidden="true">
+      <div class="stage-top">
+        <span class="stage-title">De l’historique à la prévision</span>
+        <span class="stage-keys"><span><i></i>Historique</span><span class="fc"><i></i>Prévision</span></span>
+      </div>
+      <svg viewBox="0 0 1000 300" preserveAspectRatio="xMidYMid meet">
+        <g stroke="rgba(255,255,255,.07)" stroke-width="1"><path d="M0 60H1000M0 130H1000M0 200H1000M0 270H1000"/></g>
+        <path d="M640 118 C700 92 760 150 820 104 S940 52 1000 70 L1000 170 C940 160 880 196 820 176 S700 170 640 118 Z" fill="#1140ff" opacity=".22"/>
+        <path d="M0 214 C40 200 70 228 110 206 S180 150 220 172 S290 226 330 190 S400 120 440 146 S510 196 550 160 S610 110 640 118" fill="none" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M640 118 C700 108 760 164 820 138 S940 96 1000 112" fill="none" stroke="#6f8dff" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 8"/>
+        <path d="M640 30V280" stroke="rgba(255,255,255,.22)" stroke-width="1" stroke-dasharray="3 5"/>
+        <circle cx="640" cy="118" r="6" fill="#101114" stroke="#6f8dff" stroke-width="2.5"/>
+      </svg>
+      <p class="stage-note">Illustration de principe — la zone bleue représente l’intervalle d’incertitude de la prévision.</p>
+    </div>
+  </div>
+</header>
+
+<section id="expertise" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Domaines d’expertise</div>
+      <h2>Ce que nous faisons</h2>
+      <p class="lead">Des outils d’IA construits sur vos propres chiffres, pour passer de l’intuition à l’anticipation.</p>
+    </div>
+    <div class="grid g3">
+      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l5-5 4 3 8-9"/><path d="M15 6h5v5"/></svg></div><h3>Prévision & analyse prédictive</h3><p>Séries temporelles, prévision de la demande, de la charge et des incidents, à partir de vos historiques.</p></div>
+      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M8 15v-3M12 15V9M16 15v-5"/></svg></div><h3>Aide à la décision</h3><p>Tableaux de bord, scores de priorité, alertes précoces et indicateurs expliqués.</p></div>
+      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9 11h6M9 14h4"/></svg></div><h3>IA linguistique & plateformes</h3><p>Assistants conversationnels sourcés, détection de menaces multilingue — français, somali, afar, arabe — plateformes web et mobiles.</p></div>
+    </div>
+    <div class="chips reveal"><span>Énergie & distribution</span><span>Assurance</span><span>Transport & logistique</span><span>Maritime & aéroportuaire</span><span>Santé & pharmacie</span><span>Industrie</span></div>
+    <div class="grid g4 kpis">
+      <div class="kpi reveal"><b>02</b>Cofondateurs ingénieurs en IA</div>
+      <div class="kpi reveal"><b>08</b>Solutions conçues et développées</div>
+      <div class="kpi reveal"><b>04</b>Langues traitées par nos modèles</div>
+      <div class="kpi reveal"><b>2026</b>Immatriculée à Djibouti · enregistrée UNGM</div>
+    </div>
+  </div>
+</section>
+
+<section id="realisations">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Nos réalisations</div>
+      <h2>Ce que nous avons déjà construit</h2>
+      <p class="lead">Chaque projet est présenté avec son stade réel d’avancement.</p>
+    </div>
+    <div class="legend"><span><i class="dot d1"></i>Réalisé pour un client</span><span><i class="dot d2"></i>Prototype fonctionnel</span><span><i class="dot d3"></i>En développement</span></div>
+    <div class="grid g2">
+      <article class="card proj reveal">
+        <div class="proj-top"><span class="dom">Scoring commercial</span><span class="status"><i class="dot d1"></i>Réalisé pour un client</span></div>
+        <h3>Sales+</h3>
+        <p>Modèle qui attribue un score à chaque opportunité commerciale pour concentrer l’équipe sur celles qui ont le plus de chances d’aboutir.</p>
+        <div class="res">Réalisé pour <b>OMOA Group</b> — Executive Master IA, ISAE-Supméca / ISM Paris, 2026.</div>
+        <div class="tech">Apprentissage automatique · scoring</div>
+      </article>
+      <article class="card proj reveal">
+        <div class="proj-top"><span class="dom">Port de Djibouti</span><span class="status"><i class="dot d2"></i>Prototype fonctionnel</span></div>
+        <h3>Maritime IA</h3>
+        <p>Prévision hebdomadaire de la charge du port à partir des historiques et du suivi AIS des navires, en complément des systèmes existants.</p>
+        <div class="res">Sur 359 jours de test : erreur moyenne de <b>2,5 navires/semaine</b> pour une moyenne de 12,6 — <b>14 % de mieux</b> que la meilleure prévision naïve.</div>
+        <div class="tech">Python · séries temporelles · FMI PortWatch & AIS</div>
+      </article>
+      <article class="card proj reveal">
+        <div class="proj-top"><span class="dom">Corridor Djibouti–Éthiopie</span><span class="status"><i class="dot d2"></i>Prototype fonctionnel</span></div>
+        <h3>CorridorIQ</h3>
+        <p>Estimation dynamique des délais de transit (ETA), indice de friction du corridor et alertes proactives.</p>
+        <div class="res">Moteur fonctionnel, 22 tests automatisés. Testé sur données simulées : <b>nous cherchons un partenaire pour passer sur données réelles.</b></div>
+        <div class="tech">Python · pytest · intégration continue</div>
+      </article>
+      <article class="card proj reveal">
+        <div class="proj-top"><span class="dom">Réseaux · administrations</span><span class="status"><i class="dot d2"></i>Prototype fonctionnel</span></div>
+        <h3>NetSentinel</h3>
+        <p>Prédiction des pannes réseau 60 minutes à l’avance (latence, pertes de paquets, bande passante, CPU, température), avec explication de chaque alerte.</p>
+        <div class="res">Tableau de bord en 4 vues : supervision, prévision H+1, journal d’alertes, rapport de direction. Démontré sur données simulées.</div>
+        <div class="tech">LightGBM + LSTM · SHAP · React</div>
+      </article>
+      <article class="card proj reveal">
+        <div class="proj-top"><span class="dom">Patrimoine · langues nationales</span><span class="status"><i class="dot d2"></i>Prototype fonctionnel</span></div>
+        <h3>XeerAI</h3>
+        <p>Assistant qui retrouve et cite les sources du Xeer Ciise, droit coutumier inscrit au patrimoine immatériel de l’UNESCO (2024). Il cite, n’interprète jamais, et dit « je ne sais pas » sans source.</p>
+        <div class="res">Présenté au concours du 1er Forum National sur l’IA (Djibouti, 2026).</div>
+        <div class="tech">RAG · recherche vectorielle · somali / français</div>
+      </article>
+      <article class="card proj reveal">
+        <div class="proj-top"><span class="dom">Cybersécurité de l’IA</span><span class="status"><i class="dot d2"></i>Prototype fonctionnel</span></div>
+        <h3>SENTINELLE</h3>
+        <p>Détecteur d’injections de prompt — des instructions malveillantes visant les assistants IA — en français, arabe, somali et afar.</p>
+        <div class="res">Couvre des langues peu prises en charge par les outils existants.</div>
+        <div class="tech">Traitement automatique des langues · classification</div>
+      </article>
+      <article class="card proj reveal">
+        <div class="proj-top"><span class="dom">Billetterie numérique · produit AMD Digital</span><span class="status"><i class="dot d3"></i>En développement</span></div>
+        <h3>D-BILLET</h3>
+        <p>Plateforme de billetterie conçue et développée par AMD Digital : événements, train (ligne vers Ali-Sabieh et Dire-Dawa), ferry vers Obock, module bus en préparation.</p>
+        <div class="res">Application web progressive (PWA) en pré-lancement.</div>
+        <div class="tech">PWA · paiement mobile</div>
+      </article>
+      <article class="card proj reveal">
+        <div class="proj-top"><span class="dom">Éducation</span><span class="status"><i class="dot d3"></i>En développement</span></div>
+        <h3>Jabal IA</h3>
+        <p>Tuteur IA de mathématiques pour lycéens, aligné sur le programme djiboutien et conçu par un enseignant à partir des erreurs fréquentes des élèves.</p>
+        <div class="res">Premier module en développement ; présenté à la Journée nationale de la Recherche-Action du CFEN (oct. 2026).</div>
+        <div class="tech">Next.js · Python · recherche vectorielle</div>
+      </article>
+    </div>
+    <p class="sub-label">En exploration</p>
+    <div class="grid g3 minis">
+      <div class="mini reveal"><b>WalletIQ</b>Structuration des transactions mobile money (D-Money, Waafi…) pour la gestion financière des PME.</div>
+      <div class="mini reveal"><b>SchoolIQ</b>Suivi des frais de scolarité et rapprochement des paiements pour les écoles privées.</div>
+      <div class="mini reveal"><b>AgroIQ</b>Vision par ordinateur pour les entrepôts agroalimentaires.</div>
+    </div>
+  </div>
+</section>
+
+<section id="demarche" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Notre démarche</div>
+      <h2>Commencer petit, mesurer, puis décider</h2>
+      <p class="lead">Nous proposons un pilote sur un périmètre limité ; son périmètre, sa durée et ses conditions sont définis ensemble.</p>
+    </div>
+    <div class="grid g4">
+      <div class="card step reveal"><div class="n">01</div><h3>Écouter</h3><p>Comprendre vos décisions et vos difficultés.</p></div>
+      <div class="card step reveal"><div class="n">02</div><h3>Cibler</h3><p>Un cas d’usage à valeur mesurable.</p></div>
+      <div class="card step reveal"><div class="n">03</div><h3>Pilote</h3><p>Sur vos données existantes, anonymisées, sous accord de confidentialité.</p></div>
+      <div class="card step reveal"><div class="n">04</div><h3>Mesurer</h3><p>Précision et gain opérationnel avant toute extension.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="equipe">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">L’équipe</div>
+      <h2>Deux ingénieurs en IA, à Djibouti</h2>
+      <p class="lead">Une équipe locale qui connaît le terrain, les langues et les contraintes de la région.</p>
+    </div>
+    <div class="grid g2">
+      <div class="card reveal"><div class="avatar" aria-hidden="true">AM</div><h3>Aboubaker Mohamed Djama</h3><div class="role">Cofondateur · Ingénieur en IA</div><p>Executive Master en Ingénierie des Données, spécialité IA (ISAE-Supméca / ISM Paris, 2026). Projet de fin d’études : scoring d’opportunités commerciales pour OMOA Group. Licence Mathématiques-Informatique (Université de Djibouti).</p></div>
+      <div class="card reveal"><div class="avatar" aria-hidden="true">AA</div><h3>Arafad Abdi Galab</h3><div class="role">Cofondateur · IA pour la logistique</div><p>Executive Master en Ingénierie des Données, option IA (ISAE-Supméca / ISM Paris, 2026). Expérience en administration systèmes (MSC Shipping Djibouti) et en conformité bancaire. Spécialiste des données AIS et des séries temporelles.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-box">
+      <div class="sec-head reveal">
+        <div class="eyebrow">Contact</div>
+        <h2>Parlons de vos données</h2>
+        <p class="lead">Un échange de 20 minutes suffit pour identifier un premier cas d’usage.</p>
+      </div>
+      <div class="grid g2">
+        <div class="cc reveal"><h3>Aboubaker Mohamed Djama</h3><div class="role">Cofondateur · Ingénieur en IA</div><ul><li><a href="tel:+25377694812">+253 77 69 48 12</a></li><li><a href="mailto:abobaker.mohamed@amd-digital.tech">abobaker.mohamed@amd-digital.tech</a></li><li><a href="https://www.linkedin.com/in/abobaker-mohamed-801126188" target="_blank" rel="noopener">LinkedIn</a></li></ul><a class="btn wa" href="https://wa.me/25377694812?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>WhatsApp</a></div>
+        <div class="cc reveal"><h3>Arafad Abdi Galab</h3><div class="role">Cofondateur · IA pour la logistique</div><ul><li><a href="tel:+25377647490">+253 77 64 74 90</a></li><li><a href="mailto:arafad.abdi@amd-digital.tech">arafad.abdi@amd-digital.tech</a></li></ul><a class="btn wa" href="https://wa.me/25377647490?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>WhatsApp</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a href="#" class="brand" aria-label="AMD Digital — accueil"><svg viewBox="4 4 88 80" aria-hidden="true"><path class="top" fill-rule="evenodd" d="M48 4 L92 30 L48 56 L4 30 Z M48 20 L28 32 L48 44 L68 32 Z"/><path class="base" d="M4 46 L48 72 L92 46 L92 58 L48 84 L4 58 Z"/></svg>AMD Digital</a><div class="fsig">Mobile · Web · IA · Réseau</div><p>Entreprise djiboutienne d’intelligence artificielle : prévision et aide à la décision à partir de vos propres données.</p></div>
+      <div><h4>Navigation</h4><ul><li><a href="#expertise">Expertise</a></li><li><a href="#realisations">Réalisations</a></li><li><a href="#demarche">Démarche</a></li><li><a href="#equipe">Équipe</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul class="fcontact"><li><span>Aboubaker Mohamed Djama</span><a href="mailto:abobaker.mohamed@amd-digital.tech">abobaker.mohamed@amd-digital.tech</a><br><a href="tel:+25377694812">+253 77 69 48 12</a></li><li><span>Arafad Abdi Galab</span><a href="mailto:arafad.abdi@amd-digital.tech">arafad.abdi@amd-digital.tech</a><br><a href="tel:+25377647490">+253 77 64 74 90</a></li><li>Quartier 6, Djibouti</li></ul></div>
+    </div>
+    <div class="fbar"><span>© 2026 AMD Digital · Entreprise djiboutienne</span><span>Programmation, conseil et activités informatiques</span></div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/25377694812?text=Bonjour%20AMD%20Digital" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
+<script src="js/main.js" defer></script>
+</body>
+</html>
